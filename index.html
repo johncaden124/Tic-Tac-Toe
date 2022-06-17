@@ -9,6 +9,7 @@
 <body>
     <h1>Tic-Tac-Toe</h1>
     <hr>
+    <h3 id="currentPlayer"></h3>
     <br>
     <div id="board">
         <div class="tile" id="0"></div>
@@ -21,16 +22,15 @@
         <div class="tile" id="7"></div>
         <div class="tile" id="8"></div>
     </div>
+    <hr>
     <form>
         Player 1, enter your name here:
-        <input type= "text" id="p1name" name="p1name"> <br> <br>
+        <input type="text" id="p1name" name="p1name"> <br> <br>
         Player 2, enter your name here: <input type= "text" id="p2name" name="p2name"> <br> <br> <br>
-        <input type = "button" onclick="showNames()" value="submit">
+        <input type="button" onclick="startGame()" value="Start Game">
         <span id="show"></span>
     </form>
 
-    <div class="winning-message" id="winning-message"></div>
-    <div data-winning-message-text></div>
     <button id="restartButton">Restart</button>
     <script src="script.js"></script>
 </body>
